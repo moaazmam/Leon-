@@ -1,0 +1,336 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    padding: 15px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+}
+
+.navbar h2{
+    color: #333;
+    font-size: 35px;
+}
+
+.navbar h2 span{
+    color: #43c6c6;
+}
+
+.navbar input{
+    display: none;
+}
+
+.navbar label{
+    color: #333;
+    font-size: 30px;
+}
+
+.navbar ul{
+    list-style: none;
+    position: absolute;
+    left: 80%;
+    right: 5%;
+    top:90%;
+    display: none;
+}
+
+.navbar input:checked~ul{
+    display: block;
+}
+
+.navbar ul a{
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    background-color: #eeeeee;
+    border: 1px solid rgb(172, 172, 172);
+    padding: 10px;
+    display: block;
+}
+
+.navbar ul a:hover{
+    color: #43c6c6;
+}
+
+.home{
+    height:100vh;
+    width: 100%;
+    background-image:url(../images/landing.jpg);
+    background-size: cover;
+    text-align: center;
+    padding-top: 250px;
+}
+
+.home h1{
+    font-size:55px;
+    color: rgb(131, 223, 223);
+    
+}
+ 
+.home p{
+    font-size:20px;
+    padding-top: 20px;
+}
+
+.icon{
+    background-color: rgb(229, 229, 229);
+    padding:50px;
+    display: flex ;
+    justify-content:space-between;
+}
+
+.icon .box{
+    text-align: center;
+    width: 30%;
+}
+
+.icon i{
+font-size:40px;
+color: rgb(123, 237, 237);
+padding-bottom: 20px;
+}
+
+.icon p{
+    padding-top:20px;
+    color: gray;
+    font-size:25px;
+}
+
+.photos{
+    background-color: rgb(220, 220, 220);
+    padding: 50px 121px;
+}
+
+ .photos h1{
+    color: rgb(200, 200, 200);
+    font-size: 85px;
+    text-align: center;
+}
+
+.photos .top{
+    text-align: center;
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+.photos .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.photos .box{
+    width: 30%;
+    background-color: white;
+}
+
+.photos .box img{
+    width:100%;
+}
+
+.photos .box h3{
+    padding:0px 15px;
+    font-size: 20px;
+    padding-top: 15px;
+}
+.photos .box p{
+    color: rgb(169, 169, 169);
+    padding:0px 15px;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+
+.contact{
+    text-align: center;
+    padding: 100px;
+    background-color: rgb(245, 244, 244);
+}
+
+.contact h1{
+    padding-top: 0px;
+    font-size: 100px;
+    color: rgb(225, 225, 225);
+
+}
+.contact p{
+        font-size: 30px;
+        margin-top: -20px;
+        color: rgb(127, 127, 127);    
+}
+
+.contact h2{
+    font-size: 35px;
+    margin-top: 45px;
+    color: rgb(0, 0, 60);
+    padding-bottom: 20px;
+    
+}
+
+.contact h4{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.contact a{
+    text-decoration: none;
+    font-size: 35px;
+    color: rgb(31, 31, 125);
+}
+
+.center h2{
+    padding-top: 100px;
+    font-size: 80px;
+    text-align: center;
+    color:rgb(230, 230, 230) ;
+}
+
+.center p{
+    text-align: center;
+    color: gray;
+    margin-top: -25px;
+    font-size: 20px;
+}
+
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 100px 50px 50px;
+}
+
+.services .content{
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services .content .box{
+    width: 45%;
+    display: flex;
+}
+
+.services .content .box i{
+    color: #43c6c6;
+    font-size: 30px;
+    padding-right: 30px;
+}
+
+.services .contact .box p{
+    color: gray;
+    padding-top: 30px;
+    font-size: 10px;
+}
+
+.services .image{
+    width: 27%;
+    position: relative;
+}
+
+.services .image img{
+    width: 90%;
+}
+.services .toma{
+    height: 530px;
+    width: 100px;
+    background-color: rgb(98, 98, 98);
+    position: absolute;
+    top: -40px;
+    z-index: -1;
+    right: -30px;
+}
+
+.about h1{
+    text-align: center;
+    color: rgb(175, 175, 175);
+    font-size: 100px;
+    padding-top: 35px;
+}
+
+.about h4{
+    text-align: center;
+    margin-top: -30px;
+    font-size: 25px;
+}
+ .about .content{
+    display: flex;
+    justify-content: space-between; 
+    padding: 50px 100px;
+
+}
+
+.about img{
+    width: 300px;
+    height: 400px;
+}
+
+.about .text{
+    width: 60%;
+    
+}
+
+.about p{
+    padding: 65px;
+    font-size: 18px;
+}
+
+.about h2{
+    padding: 65px;
+    font-size: 20px;
+    color: rgb(195, 195, 195);
+}
+
+.about hr{
+   border-color: #43c6c6;
+}
+
+.about .vamos{
+    height: 500px;
+    width: 100px;
+    background-color: lightgray;
+    position: absolute;
+    top: -50px;
+    z-index: -1;
+    left: -30px;
+    
+    
+}
+
+.about .image{
+    position: relative;
+}
+
+.about .moaaz{
+    height: 400px;
+    width: 100px;
+    background-color: #43c6c6;
+    position: absolute;
+    top: -50px;
+    z-index: -1;
+   right: -30px;
+}
+
+.about .aya{
+    height: 100px;
+    width: 300px;
+    background-color: #43c6c6;
+    position: absolute;
+    z-index: -1;
+    bottom: 50px;
+    right: -200px;
+}
+
+
